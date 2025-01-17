@@ -1,3 +1,4 @@
-2myvar = "John"
-my-var = "John"
-my var = "John"
+x, y, z = "Orange", "Banana", "Cherry"
+print(x)
+print(y)
+print(z)
