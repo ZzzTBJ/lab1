@@ -1,2 +1,2 @@
-x = 5
-y = "Hello, World!"
+#this is comment
+print("Hello world!")
