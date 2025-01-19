@@ -1,3 +1,3 @@
 price = 59
-txt = f"The price is {price} dollars"
+txt = f"The price is {price:.2f} dollars"
 print(txt)
