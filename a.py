@@ -1,2 +1,2 @@
 a = "Hello, World!"
-print(a.replace("H", "J"))
+print(a.split(",")) # returns ['Hello', ' World!']
