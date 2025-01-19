@@ -1,4 +1,4 @@
 a = "Hello"
 b = "World"
-c = a + b
+c = a + " " + b
 print(c)
