@@ -1,23 +1,13 @@
-#6.14
-myfamily = {
-  "child1" : {
-    "name" : "Emil",
-    "year" : 2004
-  },
-  "child2" : {
-    "name" : "Tobias",
-    "year" : 2007
-  },
-  "child3" : {
-    "name" : "Linus",
-    "year" : 2011
-  }
-}
+#7.1
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")
 
-print(myfamily)
-print(myfamily["child2"]["name"])
-for x, obj in myfamily.items():
-  print(x)
 
-  for y in obj:
-    print(y + ':', obj[y])
+#One line if statement:
+if a > b: print("a is greater than b")
