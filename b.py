@@ -1,10 +1,6 @@
 #7.1
-# Nested If
-x = 41
+a = 33
+b = 200
 
-if x > 10:
-  print("Above ten,")
-  if x > 20:
-    print("and also above 20!")
-  else:
-    print("but not above 20.")
+if b > a:
+  pass
