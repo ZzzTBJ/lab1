@@ -1,6 +1,6 @@
-#3.50
+#3.51
 thislist = ["banana", "Orange", "Kiwi", "cherry"]
-thislist.sort(key = str.lower)
+thislist.reverse()
 print(thislist)
 
 
