@@ -1,7 +1,5 @@
-#1.7
-class myclass():
-    def __len__(self):
-        return 0
+#1.8
+def myFunction() :
+    return True
 
-myobj = myclass()
-print(bool(myobj))
+print(myFunction())
