@@ -1,6 +1,6 @@
-#3.51
-thislist = ["banana", "Orange", "Kiwi", "cherry"]
-thislist.reverse()
-print(thislist)
+#3.52
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
 
 
