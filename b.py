@@ -1,4 +1,6 @@
-#3.40
-newlist = [x for x in range(10) if x < 5]
+#3.41
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x.upper() for x in fruits]
 
 print(newlist)
