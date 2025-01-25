@@ -1,4 +1,5 @@
-#3.21
+#3.22
 thislist = ["apple", "banana", "cherry"]
-thislist.insert(1, "orange")
+tropical = ["mango", "pineapple", "papaya"]
+thislist.extend(tropical)
 print(thislist)
