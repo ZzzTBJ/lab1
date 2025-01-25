@@ -1,3 +1,3 @@
-#3.7
-thislist = list(("apple", "banana", "cherry")) # note the double round-brackets
-print(thislist)
+#3.8
+thislist = ["apple", "banana", "cherry"]
+print(thislist[1])
