@@ -1,5 +1,4 @@
-#3.23
+#3.24
 thislist = ["apple", "banana", "cherry"]
-thistuple = ("kiwi", "orange")
-thislist.extend(thistuple)
+thislist.remove("banana")
 print(thislist)
