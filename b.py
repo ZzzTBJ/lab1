@@ -1,4 +1,4 @@
-#3.25
-thislist = ["apple", "banana", "cherry", "banana", "kiwi"]
-thislist.remove("banana")
+#3.26
+thislist = ["apple", "banana", "cherry"]
+thislist.pop(1)
 print(thislist)
