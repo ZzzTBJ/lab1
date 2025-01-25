@@ -1,11 +1,7 @@
-#9.9
-for x in range(6):
-  print(x)
-else:
-  print("Finally finished!")
+#9.10
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
 
-for x in range(6):
-  if x == 3: break
-  print(x)
-else:
-  print("Finally finished!")
+for x in adj:
+  for y in fruits:
+    print(x, y)
