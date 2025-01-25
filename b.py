@@ -1,4 +1,4 @@
-#4.2
-thistuple = ("apple", "banana", "cherry", "apple", "cherry")
-print(thistuple)
+#4.3
+thistuple = ("apple", "banana", "cherry")
+print(len(thistuple))
 
