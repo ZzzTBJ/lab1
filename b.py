@@ -1,3 +1,3 @@
-#3.2
-thislist = ["apple", "banana", "cherry", "apple", "cherry"]
-print(thislist)
+#3.3
+thislist = ["apple", "banana", "cherry"]
+print(len(thislist))
