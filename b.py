@@ -1,7 +1,7 @@
-#5.19
-set1 = {"apple", 1,  "banana", 0, "cherry"}
-set2 = {False, "google", 1, "apple", 2, True}
+#5.20
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
 
-set3 = set1.intersection(set2)
+set3 = set1.difference(set2)
 
 print(set3)
