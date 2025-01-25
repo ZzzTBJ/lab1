@@ -1,3 +1,3 @@
-#3.10
+#3.11
 thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
-print(thislist[2:5])
+print(thislist[:4])
