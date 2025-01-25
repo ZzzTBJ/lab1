@@ -1,5 +1,4 @@
-#4.19
+#4.20
 thistuple = ("apple", "banana", "cherry")
-y = list(thistuple)
-y.remove("apple")
-thistuple = tuple(y)
+del thistuple
+print(thistuple) #this will raise an error because the tuple no longer exists
