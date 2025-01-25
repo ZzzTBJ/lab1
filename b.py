@@ -1,3 +1,3 @@
 #4.8
-thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets
-print(thistuple)
+thistuple = ("apple", "banana", "cherry")
+print(thistuple[1])
