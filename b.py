@@ -1,3 +1,12 @@
-#6.4
-thisdict = dict(name = "John", age = 36, country = "Norway")
-print(thisdict)
+#6.5
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+x = thisdict["model"]
+print(x)
+x = thisdict.get("model")
+print(x)
+x = thisdict.keys()
+print(x)
