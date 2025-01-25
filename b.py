@@ -1,6 +1,6 @@
-#3.37
+#3.38
 fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 
-newlist = [x for x in fruits if x != "apple"]
+newlist = [x for x in fruits]
 
 print(newlist)
