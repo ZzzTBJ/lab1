@@ -1,3 +1,4 @@
-#5.1
-thisset = {"apple", "banana", "cherry"}
+#5.2
+thisset = {"apple", "banana", "cherry", "apple"}
+
 print(thisset)
