@@ -1,8 +1,6 @@
-#3.43
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-
-newlist = [x if x != "banana" else "orange" for x in fruits]
-
-print(newlist)
+#3.44
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)
 
 
