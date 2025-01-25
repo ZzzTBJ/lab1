@@ -1,3 +1,3 @@
-#4.10
-thistuple = ("apple", "banana", "cherry")
-print(thistuple[-1])
+#4.11
+thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+print(thistuple[2:5])
