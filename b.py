@@ -1,4 +1,7 @@
-#4.20
-thistuple = ("apple", "banana", "cherry")
-del thistuple
-print(thistuple) #this will raise an error because the tuple no longer exists
+#4.21
+fruits = ("apple", "banana", "cherry")
+(green, yellow, red) = fruits
+
+print(green)
+print(yellow)
+print(red)
