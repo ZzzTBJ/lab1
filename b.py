@@ -1,4 +1,8 @@
-#1.5
-bool("abc")
-bool(123)
-bool(["apple", "cherry", "banana"])
+#1.6
+bool(False)
+bool(None)
+bool(0)
+bool("")
+bool(())
+bool([])
+bool({})
