@@ -1,3 +1,6 @@
-#9.2
-for x in "banana":
+#9.3
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
   print(x)
+  if x == "banana":
+    break
