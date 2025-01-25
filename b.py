@@ -1,8 +1,5 @@
-#5.13
+#5.14
 thisset = {"apple", "banana", "cherry"}
 
-thisset.clear()
-print(thisset)
-
-del thisset
-print(thisset)
+for x in thisset:
+  print(x)
