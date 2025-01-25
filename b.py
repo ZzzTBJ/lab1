@@ -1,3 +1,3 @@
-#4.7
-mytuple = ("apple", "banana", "cherry")
-print(type(mytuple))
+#4.8
+thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets
+print(thistuple)
