@@ -1,8 +1,4 @@
-#4.22
-fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
-
-(green, *tropic, red) = fruits
-
-print(green)
-print(tropic)
-print(red)
+#4.24
+thistuple = ("apple", "banana", "cherry")
+for x in thistuple:
+  print(x)
