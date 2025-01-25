@@ -1,4 +1,8 @@
-#4.3
-thistuple = ("apple", "banana", "cherry")
-print(len(thistuple))
+#4.4
+thistuple = ("apple",)
+print(type(thistuple))
+
+#NOT a tuple
+thistuple = ("apple")
+print(type(thistuple))
 
