@@ -1,8 +1,9 @@
-#5.17
-x = {"a", "b", "c"}
-y = (1, 2, 3)
+#5.18
+set1 = {"apple", "banana", "cherry"}
+set2 = {"google", "microsoft", "apple"}
 
-z = x.union(y)
-print(z)
-x.update(y)
-print(x)
+set3 = set1.intersection(set2)
+print(set3)
+print(set1)
+set3 = set1 & set2
+print(set3)
