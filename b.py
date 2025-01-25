@@ -1,9 +1,8 @@
-#6.1
+#6.2
 thisdict = {
   "brand": "Ford",
   "model": "Mustang",
-  "year": 1964
+  "year": 1964,
+  "year": 2020
 }
 print(thisdict)
-print(thisdict["brand"])
-print(type(thisdict))
