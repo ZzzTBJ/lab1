@@ -1,4 +1,7 @@
-#2.7
-x = ["apple", "banana"]
-print("banana" in x)
-print("pineapple" not in x)
+#2.8
+print(6 & 3)
+print(6 | 3)
+print(6 ^ 3)
+print(~3)
+print(3 << 2)
+print(8 >> 2)
