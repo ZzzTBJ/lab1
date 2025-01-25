@@ -5,11 +5,11 @@ car = {
 "year": 1964
 }
 
-x = car.keys()
+x = car.values()
 print(x) #before the change
 
-car["color"] = "white"
+car["year"] = 2020
 print(x) #after the change
 
-x = car.values()
+x = car.items()
 print(x)
