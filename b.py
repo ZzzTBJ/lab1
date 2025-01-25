@@ -1,8 +1,8 @@
-#6.2
+#6.3
 thisdict = {
   "brand": "Ford",
-  "model": "Mustang",
+  "electric": False,
   "year": 1964,
-  "year": 2020
+  "colors": ["red", "white", "blue"]
 }
-print(thisdict)
+print(len(thisdict))
