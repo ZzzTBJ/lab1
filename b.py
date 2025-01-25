@@ -1,4 +1,4 @@
-#3.14
+#3.15
 thislist = ["apple", "banana", "cherry"]
-if "apple" in thislist:
-    print("Yes, 'apple' is in the fruits list")
+thislist[1] = "blackcurrant"
+print(thislist)
