@@ -1,4 +1,3 @@
-#9.1
-fruits = ["apple", "banana", "cherry"]
-for x in fruits:
+#9.2
+for x in "banana":
   print(x)
