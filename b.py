@@ -1,11 +1,10 @@
-#6.7
+#6.10
 thisdict = {
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964
 }
-thisdict["year"] = 2018
+thisdict["color"] = "red"
 print(thisdict)
-thisdict.update({"year": 2020})
+thisdict.update({"color": "red"})
 print(thisdict)
-
