@@ -1,6 +1,5 @@
-#7.1
-a = 33
-b = 200
-
-if b > a:
-  pass
+#8.1
+i = 1
+while i < 6:
+  print(i)
+  i += 1
