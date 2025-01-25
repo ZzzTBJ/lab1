@@ -1,3 +1,3 @@
-#9.5
-for x in range(6):
+#9.7
+for x in range(2, 6):
   print(x)
