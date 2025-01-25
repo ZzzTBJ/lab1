@@ -1,7 +1,6 @@
-#5.9
+#5.10
 thisset = {"apple", "banana", "cherry"}
 
-print("banana" in thisset)
-thisset = {"apple", "banana", "cherry"}
+thisset.add("orange")
 
-print("banana" not in thisset)
+print(thisset)
