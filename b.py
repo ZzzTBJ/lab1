@@ -1,3 +1,2 @@
-#1.10
-x = 200
-print(isinstance(x, int))
+#2.1
+print(10 + 5)
