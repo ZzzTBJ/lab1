@@ -1,6 +1,4 @@
-#3.38
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
-
-newlist = [x for x in fruits]
+#3.39
+newlist = [x for x in range(10)]
 
 print(newlist)
