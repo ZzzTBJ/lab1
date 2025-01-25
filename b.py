@@ -1,3 +1,3 @@
-#4.11
+#4.12
 thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
-print(thistuple[2:5])
+print(thistuple[:4])
