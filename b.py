@@ -1,4 +1,4 @@
-#3.17
+#3.18
 thislist = ["apple", "banana", "cherry"]
-thislist[1:2] = ["blackcurrant", "watermelon"]
+thislist[1:3] = ["watermelon"]
 print(thislist)
