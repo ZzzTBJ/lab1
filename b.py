@@ -1,6 +1,6 @@
-#3.53
+#3.54
 thislist = ["apple", "banana", "cherry"]
-mylist = list(thislist)
+mylist = thislist[:]
 print(mylist)
 
 
