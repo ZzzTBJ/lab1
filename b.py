@@ -1,6 +1,5 @@
-#4.18
+#4.19
 thistuple = ("apple", "banana", "cherry")
-y = ("orange",)
-thistuple += y
-
-print(thistuple)
+y = list(thistuple)
+y.remove("apple")
+thistuple = tuple(y)
