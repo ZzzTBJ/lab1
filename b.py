@@ -1,4 +1,4 @@
-#3.31
+#3.32
 thislist = ["apple", "banana", "cherry"]
-for x in thislist:
-    print(x)
+for i in range(len(thislist)):
+    print(thislist[i])
