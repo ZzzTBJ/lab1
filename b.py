@@ -1,4 +1,4 @@
-#4.1
-thistuple = ("apple", "banana", "cherry")
+#4.2
+thistuple = ("apple", "banana", "cherry", "apple", "cherry")
 print(thistuple)
 
