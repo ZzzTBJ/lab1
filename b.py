@@ -1,11 +1,8 @@
-#5.12
+#5.13
 thisset = {"apple", "banana", "cherry"}
 
-thisset.remove("banana")
+thisset.clear()
 print(thisset)
-thisset.discard("banana")
-print(thisset)
-x = thisset.pop()
-print(x)
 
+del thisset
 print(thisset)
