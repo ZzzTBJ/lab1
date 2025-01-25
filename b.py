@@ -1,2 +1,3 @@
-#4.6
-tuple1 = ("abc", 34, True, 40, "male")
+#4.7
+mytuple = ("apple", "banana", "cherry")
+print(type(mytuple))
