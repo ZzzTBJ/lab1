@@ -1,8 +1,10 @@
-#5.15
+#5.16
 set1 = {"a", "b", "c"}
 set2 = {1, 2, 3}
+set3 = {"John", "Elena"}
+set4 = {"apple", "bananas", "cherry"}
 
-set3 = set1.union(set2)
-print(set3)
-set3 = set1 | set2
-print(set3)
+myset = set1.union(set2, set3, set4)
+print(myset)
+myset = set1 | set2 | set3 |set4
+print(myset)
