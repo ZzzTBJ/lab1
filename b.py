@@ -1,14 +1,11 @@
-#5.11
+#5.12
 thisset = {"apple", "banana", "cherry"}
-tropical = {"pineapple", "mango", "papaya"}
 
-thisset.update(tropical)
-
+thisset.remove("banana")
 print(thisset)
-
-thisset = {"apple", "banana", "cherry"}
-mylist = ["kiwi", "orange"]
-
-thisset.update(mylist)
+thisset.discard("banana")
+print(thisset)
+x = thisset.pop()
+print(x)
 
 print(thisset)
