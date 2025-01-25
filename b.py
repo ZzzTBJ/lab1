@@ -1,4 +1,4 @@
-#3.27
+#3.28
 thislist = ["apple", "banana", "cherry"]
-thislist.pop()
+del thislist[0]
 print(thislist)
