@@ -1,4 +1,4 @@
-#5.3
-thisset = {"apple", "banana", "cherry", True, 1, 2}
+#5.4
+thisset = {"apple", "banana", "cherry", False, True, 0}
 
 print(thisset)
