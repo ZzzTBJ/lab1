@@ -1,2 +1,3 @@
-#2.11
-print(5 + 4 - 7 + 3)
+#3.1
+thislist = ["apple", "banana", "cherry"]
+print(thislist)
