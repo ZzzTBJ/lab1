@@ -1,8 +1,3 @@
-#6.3
-thisdict = {
-  "brand": "Ford",
-  "electric": False,
-  "year": 1964,
-  "colors": ["red", "white", "blue"]
-}
-print(len(thisdict))
+#6.4
+thisdict = dict(name = "John", age = 36, country = "Norway")
+print(thisdict)
