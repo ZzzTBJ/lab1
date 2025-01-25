@@ -1,4 +1,3 @@
-#3.28
+#3.29
 thislist = ["apple", "banana", "cherry"]
-del thislist[0]
-print(thislist)
+del thislist
