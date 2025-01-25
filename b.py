@@ -1,5 +1,8 @@
-#1.8
+#1.9
 def myFunction() :
     return True
 
-print(myFunction())
+if myFunction():
+    print("YES!")
+else:
+    print("NO!")
