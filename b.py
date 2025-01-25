@@ -1,5 +1,8 @@
-#5.14
-thisset = {"apple", "banana", "cherry"}
+#5.15
+set1 = {"a", "b", "c"}
+set2 = {1, 2, 3}
 
-for x in thisset:
-  print(x)
+set3 = set1.union(set2)
+print(set3)
+set3 = set1 | set2
+print(set3)
