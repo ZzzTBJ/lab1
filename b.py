@@ -1,10 +1,14 @@
-#6.10
+#6.11
 thisdict = {
   "brand": "Ford",
   "model": "Mustang",
   "year": 1964
 }
-thisdict["color"] = "red"
+thisdict.pop("model")
 print(thisdict)
-thisdict.update({"color": "red"})
+thisdict.popitem()
+print(thisdict)
+del thisdict["model"]
+print(thisdict)
+thisdict.clear()
 print(thisdict)
