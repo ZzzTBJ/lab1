@@ -1,8 +1,8 @@
 #4.22
-fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
+fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
 
-(green, yellow, *red) = fruits
+(green, *tropic, red) = fruits
 
 print(green)
-print(yellow)
+print(tropic)
 print(red)
