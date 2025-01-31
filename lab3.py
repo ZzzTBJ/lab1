@@ -1,9 +1,8 @@
-def my_function(x, /):
-  print(x)
+x = lambda a : a + 10
+print(x(5))
 
-my_function(3)
+x = lambda a, b : a * b
+print(x(5, 6))
 
-def my_function(*, x):
-  print(x)
-
-my_function(x = 3)
+x = lambda a, b, c : a + b + c
+print(x(5, 6, 2))
