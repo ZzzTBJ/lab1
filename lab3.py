@@ -7,7 +7,9 @@ class Person:
     print(self.firstname, self.lastname)
 
 class Student(Person):
-  pass
+  def __init__(self, fname, lname, year):
+    super().__init__(fname, lname)
+    self.graduationyear = year
 
-x = Student("Mike", "Olsen")
-x.printname()
+x = Student("Mike", "Olsen", 2019)
+print(x.graduationyear)
