@@ -1,6 +1,4 @@
-def my_function(fname):
-    print(fname + " Refsnes")
+def my_function(fname, lname):
+    print(fname + " " + lname)
 
-my_function("Emil")
-my_function("Tobias")
-my_function("Linus")
+my_function("Emil", "Refsnes")
