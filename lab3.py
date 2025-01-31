@@ -1,8 +1,5 @@
-def myfunc(n):
-  return lambda a : a * n
+class MyClass:
+    x = 5
 
-mydoubler = myfunc(2)
-print(mydoubler(11))
-
-mytripler = myfunc(3)
-print(mytripler(11))
+p1 = MyClass()
+print(p1.x)
