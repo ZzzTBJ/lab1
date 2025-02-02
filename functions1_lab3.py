@@ -1,8 +1,6 @@
-def New(list):
-    arr = []
-    for i in list:
-        if i not in arr:
-            arr.append(i)
-    print(arr)
-nums = list(map(int, input().split()))
-New(nums)
+def Palindrome(str):
+    if str[::-1].casefold() == str.casefold():
+        print("It is palindrome")
+    else:
+        print("It is NOT palindrome")
+Palindrome(input())
