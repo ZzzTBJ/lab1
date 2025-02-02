@@ -1,22 +1,14 @@
-class Account:
-    def __init__(self, owner, bal):
-        self.owner = owner
-        self.bal = bal
-    def deposit(self, dep):
-        self.bal += dep
-        print(f"{self.owner}, your balance: {self.bal}")
-    def withdraw(self, wth):
-        if self.bal - wth >= 0:
-            self.bal -= wth
-            print(f"{self.owner}, your balance: {self.bal}")
-        else:
-            print(f"{self.owner}, insufficient balance. You have {self.bal}")
-p1 = Account("KBTU", 1000)
-p2 = Account("Zukhra", 2000)
+import math
+import random
+def filt(num):
+    if num < 2:
+        return False
+    for i in range(2, int(pow(num, 0.5))+1):
+        if num % i == 0:
+            return False
+    return True
 
-p1.deposit(100)
-p1.withdraw(200)
-p1.withdraw(1200)
-
-p2.deposit(10000)
-p2.withdraw(100)
+arr = [random.randint(1,10) for i in range(10)]
+print(arr)
+nums = list(filter(lambda x: filt(x), arr))
+print(nums)
