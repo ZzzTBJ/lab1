@@ -1,6 +1,6 @@
 from DictofMovies import movies
-def Sublist():
+def Category(cat):
     for i in movies:
-        if i["imdb"] > 5.5:
-            print(i["name"], i["imdb"])
-Sublist()
+        if i["category"] == cat:
+            print(i["name"])
+Category("Romance")
