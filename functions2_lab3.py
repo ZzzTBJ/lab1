@@ -1,10 +1,6 @@
 from DictofMovies import movies
-def Check(name):
+def Sublist():
     for i in movies:
-        if i["name"] == name:
-            if i["imdb"] > 5.5:
-                print("True")
-            else: print("False")
-Check("Exam")
-Check("We Two")
-Check("Detective")
+        if i["imdb"] > 5.5:
+            print(i["name"], i["imdb"])
+Sublist()
