@@ -1,5 +1,8 @@
-import math
-def Volume(rad = int(input())):
-    vol = (4/3)*math.pi*pow(rad,3)
-    print(f"The volume is {vol:.2f}")
-Volume()
+def New(list):
+    arr = []
+    for i in list:
+        if i not in arr:
+            arr.append(i)
+    print(arr)
+nums = list(map(int, input().split()))
+New(nums)
