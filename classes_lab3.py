@@ -1,18 +1,22 @@
-import math
-class Point:
-    def __init__(self,x,y):
-        self.x = x
-        self.y = y
-    def show(self):
-        print(f"(x,y) = ({self.x}, {self.y})")
-    def move(self,x2,y2):
-        self.x += x2
-        self.y += y2
-    def dist(self, x2,y2):
-        d = math.sqrt(pow(x2-self.x, 2)+pow(y2-self.y,2))
-        print("The distance:", d)
-p = Point(1,2)
-p.show()
-p.move(1, -2)
-p.show()
-p.dist(2,1)
+class Account:
+    def __init__(self, owner, bal):
+        self.owner = owner
+        self.bal = bal
+    def deposit(self, dep):
+        self.bal += dep
+        print(f"{self.owner}, your balance: {self.bal}")
+    def withdraw(self, wth):
+        if self.bal - wth >= 0:
+            self.bal -= wth
+            print(f"{self.owner}, your balance: {self.bal}")
+        else:
+            print(f"{self.owner}, insufficient balance. You have {self.bal}")
+p1 = Account("KBTU", 1000)
+p2 = Account("Zukhra", 2000)
+
+p1.deposit(100)
+p1.withdraw(200)
+p1.withdraw(1200)
+
+p2.deposit(10000)
+p2.withdraw(100)
