@@ -1,8 +1,10 @@
 from DictofMovies import movies
-def Average(name):
+def Average(cat):
     avg = 0
+    cnt = 0
     for i in movies:
-        if i["name"] in name:
+        if i["category"] == cat:
             avg += i["imdb"]
-    print(avg/len(name))
-Average(["Exam", "We Two", "Detective"])
+            cnt += 1
+    print(avg/cnt)
+Average("Romance")
