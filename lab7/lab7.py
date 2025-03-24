@@ -2,6 +2,9 @@ import pygame
 import sys
 import datetime
 
+
+pygame.init()
+pygame.display.set_caption("LGBTU")
 def blitRotateCenter(surf, image, topleft, angle):
 
     rotated_image = pygame.transform.rotate(image, angle)
@@ -9,8 +12,6 @@ def blitRotateCenter(surf, image, topleft, angle):
 
     surf.blit(rotated_image, new_rect)
 
-pygame.init()
-pygame.display.set_caption("LGBTU")
 size = (600, 600)
 scr = pygame.display.set_mode(size)
 scr.fill((255,255,255))
