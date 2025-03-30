@@ -28,7 +28,7 @@ background = pygame.image.load("lab8/images/AnimatedStreet.png")
 
 DISPLAYSURF = pygame.display.set_mode((400,600))
 DISPLAYSURF.fill(WHITE)
-pygame.display.set_caption("Game")
+pygame.display.set_caption("Типа формула 1")
 
 
 
@@ -134,8 +134,8 @@ while True:
             sys.exit()
 
     DISPLAYSURF.blit(background, (0,0))
-    scores = font_small.render(f"Score: {SCORE}", True, BLACK)
-    coin = font_small.render(f"Coins: {SCORE2}", True, BLACK)
+    scores = font_small.render(f"Очко: {SCORE}", True, BLACK)
+    coin = font_small.render(f"Деньги: {SCORE2}", True, BLACK)
     DISPLAYSURF.blit(scores, (10,10))
     DISPLAYSURF.blit(coin, (10, 30))
 
