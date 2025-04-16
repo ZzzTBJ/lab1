@@ -2,6 +2,8 @@ import pygame
 import sys
 import time
 import random
+import psycopg2
+import csv
 pygame.init()
 WIDTH, HEIGHT = 600, 600  
 CELL_SIZE = 20  
@@ -13,17 +15,51 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Алматинский жылан")
 clock = pygame.time.Clock()
 
-
-
 pos = [250, 250]
 font_style = pygame.font.SysFont(None, 30)
+
+def connect_db():
+    conn = psycopg2.connect(
+        dbname="mydatabase",
+        user="postgres",
+        password="2303",
+        host="localhost",
+        port="5432"
+    )
+    return conn
+
+def crtab():
+    conn = connect_db()
+    cur = conn.cursor()
+    cur.execute("""
+        CREATE TABLE IF NOT EXISTS player (
+            id SERIAL PRIMARY KEY,
+            username VARCHAR(30) NOT NULL
+        );
+    """)
+
+    cur.execute("""
+        CREATE TABLE IF NOT EXISTS score (
+            id SERIAL PRIMARY KEY,
+            user_id INTEGER REFERENCES player(id),
+            score INTEGER,
+            level INTEGER,
+            date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+    """)
+    conn.commit()
+    cur.close()
+    conn.close()
 
 def draw_score(score, lvl):
     score_text = font_style.render(f"Счет: {score}", True, (0,0,0))
     lvl_text = font_style.render(f"Уровень: {lvl}", True, (0,0,0))
     screen.blit(score_text, (10, 10))
     screen.blit(lvl_text, (10, 40))
+    save_sc(score, lvl, user_id)
+    
 clock = pygame.time.Clock()
+
 over = False
 
 def check_collision(position, snake_body):
@@ -55,7 +91,52 @@ score = 0
 lvl = 0
 running = True
 
+def save_sc(score, level, user_id):
+    conn = connect_db()
+    cur = conn.cursor()
+    cur.execute("INSERT INTO score (user_id, score, level) VALUES (%s, %s, %s)", 
+                (user_id, score, level))
+    conn.commit()
+    cur.close()
+    conn.close()
 
+def user_login():
+    conn = connect_db()
+    username = input("Enter your username: ")
+    cur = conn.cursor()
+    cur.execute("SELECT * FROM player WHERE username = %s", (username,))
+    user = cur.fetchone()
+    
+    if not user:
+        cur.execute("INSERT INTO player (username) VALUES (%s) RETURNING id", (username,))
+        user_id = cur.fetchone()[0]
+        print(f"New user {username} created.")
+    else:
+        user_id = user[0]
+        print(f"Welcome back {username}!")
+
+    conn.commit()
+
+    cur.execute("""
+        SELECT score, level FROM score 
+        WHERE user_id = %s 
+        ORDER BY date DESC LIMIT 1
+    """, (user_id,))
+    user_score_data = cur.fetchone()
+    
+    if user_score_data:
+        last_score, last_level = user_score_data
+    else:
+        last_score, last_level = 0, 1 
+    
+    print(f"Your last score: {last_score}, Last level: {last_level}")
+
+    cur.close()
+    conn.close()
+    return user_id, last_score, last_level
+
+crtab()
+user_id, score, level = user_login()
 while running:
         for event in pygame.event.get():
             if event.type == INC_SPEED:
